@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: #fff;
+			width: 900px;
+			height: 500px;
+			margin: 50px auto;
+			background-color: #539A46;
+			position: relative;
+		}
+
+		.syria{
+			color: darkblue;
+			position: relative;
+			top: -40px;
+			left: 250px;
+			display: inline;
+		}
+		.vs{
+			color: darkblue;
+			position: relative;
+			top: -40px;
+			left: 350.5px;
+			display: inline;
+			z-index: 1;
+		}
+		.brazil{
+			color: darkblue;
+			position: relative;
+			top: -40px;
+			left: 450px;
+			display: inline;
+		}
+
+		.line {
+			width: 900px;
+			height: 500px;
+			border: 3px solid #ffffff;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+		}
+
+		.half {
+			width: 450px;
+			height: 505px;
+			position: absolute;
+			top: 0px;
+			border-right-color: #fff;
+			border-right-style: solid;
+			border-right-width: 3.5px;
+			left: 0px;
+		}
+
+		
+		.center {
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			border: 3px solid #ffffff;
+			left: 375px;
+			top: 175px;
+			border-radius: 50%;
+		}
+
+		.centergoal{
+			height: 10px;
+            width: 10px;
+			position: absolute;
+			top: 250px;
+			left: 447px;		
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 1;
+		}
+
+		.stand {
+			background-color: #539A46;
+			position: absolute;
+			width: 200px;
+			height: 300px;
+			border: 3px solid #ffffff;
+			top: 98px;
+			z-index: 1;
+		}
+		
+		.smallstand {
+			background-color: #539A46;			
+			width: 75px;
+			top: 175px;
+			height: 150px;
+			border: 3px solid #ffffff;
+			position: absolute;
+			background-color: #539A46;
+			z-index: 2;
+		}
+
+		.goal{
+			height: 10px;
+            width: 10px;
+			position: absolute;
+			top: 250px;
+			left: 175px;		
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+
+		
+		.circle {
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			border: 3px solid #ffffff;
+			left: 100px;
+			top: 175px;
+			border-radius: 50%;
+		}
+
+
+		
+		.circle1 {
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			border: 3px solid #ffffff;
+			left: 650px;
+			top: 175px;
+			border-radius: 50%;
+		}
+
+		.stand2 {
+			background-color: #539A46;
+			left: 700px;
+			position: absolute;
+			width: 200px;
+			height: 300px;
+			border: 3px solid #ffffff;
+			top: 98px;
+			z-index: 1;
+		}
+
+		.smallstand2 {
+			background-color: #539A46;
+			left: 825px;			
+			width: 75px;
+			top: 175px;
+			height: 150px;
+			border: 3px solid #ffffff;
+			position: absolute;
+			background-color: #539A46;
+			z-index: 2;
+		}
+		.goal2{
+			height: 10px;
+            width: 10px;
+			position: absolute;
+			top: 250px;
+			left: 725px;		
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 1;
+		}
+		
+		.p11{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 140px;
+			left: 125px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p12{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 340px;
+			left: 125px;		
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p13{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 240px;
+			left: 25px;		
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p14{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 75px;
+			left: 275px;		
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p15{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 400px;
+			left: 275px;		
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p16{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 240px;
+			left: 325px;		
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		.p21{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 140px;
+			left: 750px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p22{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 340px;
+			left: 750px;		
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p23{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 240px;
+			left: 850px;		
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p24{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 75px;
+			left: 600px;		
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p25{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 400px;
+			left: 600px;		
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+		
+		.p26{
+			
+			height: 25px;
+            width: 25px;
+			position: absolute;
+			top: 240px;
+			left: 550px;		
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+			z-index: 2;
+		}
+	</style>
+</head>
+
+<body>
+	    <h1 class="syria">Syria</h1>
+		<h1 class="vs">-vs-</h1>
+		<h1 class="brazil">Brazil</h1>
+		<div class="line"></div>
+		<div class="half"></div>
+		<div class="stand"></div>
+		<div class="smallstand"></div>
+		<div class="circle"></div>
+		<div class="goal"></div>
+		<div class="centergoal"></div>
+		<div class="center"></div>
+		<div class="stand2"></div>
+		<div class="smallstand2"></div>
+		<div class="circle1"></div>
+		<div class="goal2"></div>
+		<div class="p11"></div>
+		<div class="p12"></div>
+		<div class="p13"></div>
+		<div class="p14"></div>
+		<div class="p15"></div>
+		<div class="p16"></div>
+		<div class="p21"></div>
+		<div class="p22"></div>
+		<div class="p23"></div>
+		<div class="p24"></div>
+		<div class="p25"></div>
+		<div class="p26"></div>
+</body>
+
+</html>
